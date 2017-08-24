@@ -11,7 +11,7 @@ class Pyramid
    def left
     # code to return left pyramid
     s=""
-  for i in 1..@row
+  (1..@row).each do |i|
     s+="*"*i +"\n"
   end
   return s
@@ -24,7 +24,7 @@ class Pyramid
 	# code to return right pyramid
   # code to print right alligned pyramid
     s=""
-    for i in 1..@row
+    (1..@row).each do |i|  
       j=@row-1
         while j>=i do
           s+=" "
@@ -42,7 +42,7 @@ class Pyramid
   def center
     # return center alligned pyramid
     s=""
-    for i in 1..@row
+     (1..@row).each do |i| 
       j=@row-1
         while j>=i do
           s+=" "

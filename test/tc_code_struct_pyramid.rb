@@ -1,7 +1,7 @@
 require_relative '../code/code_structure_pyramid'
 require 'test/unit'
-
-class Test_code_structure_pyramid < Test::Unit::TestCase
+# Test file for pyramid
+class TestCodeStructurePyramid < Test::Unit::TestCase
   def test_left
     assert_equal("*\n**\n***\n****\n*****\n", Pyramid.new(5).left)
   end
@@ -11,6 +11,7 @@ class Test_code_structure_pyramid < Test::Unit::TestCase
   end
 
   def test_center
-    assert_equal("    * \n   * * \n  * * * \n * * * * \n* * * * * \n", Pyramid.new(5).center)
+    assert_equal("    * \n   * * \n  * * * \n * * * * \n* * * * * \n", Pyramid
+    .new(5).center)
   end
 end
